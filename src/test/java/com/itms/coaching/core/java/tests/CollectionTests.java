@@ -54,19 +54,16 @@ public class CollectionTests {
     @Test
     public void employeeListTest(){
         Address address = new Address("99","HCM","LA","VN");
+        Address address4 = new Address("99","HCM","LA","VN");
         Employee1 emp1 = new Employee1(1, "Tester", address);
         Employee1 emp2 = new Employee1(2, "Dev", address);
         Employee1 emp3 = new Employee1(3, "Dev", address);
-        Employee1 emp4 = new Employee1(1, "Tester", address);
+        Employee1 emp4 = new Employee1(1, "Tester", address4);
 
         List<Employee1> employee = new ArrayList<>();
         employee.add(emp1);
         employee.add(emp2);
 
-
-        for (Employee1 empl: employee){
-            System.out.println(empl.toString());
-        }
 
         //Iterator
         List<Employee1> employee1 = new ArrayList<>();
@@ -74,7 +71,7 @@ public class CollectionTests {
         employee1.add(emp2);
 
         System.out.println(employee1.contains(emp1));
-        System.out.println(employee1.contains(emp3));
+//        System.out.println(employee1.contains(emp3));
         System.out.println(employee1.contains(emp4));
 
     }
