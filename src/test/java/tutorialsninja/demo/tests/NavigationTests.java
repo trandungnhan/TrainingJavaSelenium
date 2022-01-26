@@ -12,13 +12,18 @@ public class NavigationTests extends BaseTest{
     @Test
     public void navigationTestWithPredefinedElement(){
         NavigationBar navigationBar = new NavigationBar(webDriver);
-        navigationBar.openMenuItem("Desktops","PC");
+        navigationBar.openDesktopsPC();
     }
 
     @Test
     public void navigationTestWithMenuText1(){
         NavigationBar navigationBar = new NavigationBar(webDriver);
-        navigationBar.openMenuItem("Desktops","Show All Desktops");
+        navigationBar.openMenuItem("Desktops","PC");
+    }
+    @Test
+    public void navigationTestWithMenuText2() {
+        NavigationBar navigationBar = new NavigationBar(webDriver);
+        navigationBar.openMenuItem("Desktops", "Mac");
     }
 
     @Test

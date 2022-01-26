@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Apple Cinema 30\"",
+    "newPrice": "$110.00",
+    "oldPrice": "$122.00",
+    "price": null,
+    "tax": "$90.00"
+  },
+  {
+    "name": "HP LP3065",
+    "newPrice": null,
+    "oldPrice": null,
+    "price": "$122.00",
+    "tax": "$100.00"
+  }
+]
